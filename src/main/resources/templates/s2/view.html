@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Study02</title>
+<link href="https://github.com/JosephBean/SpringStudy2/blob/main/src/main/webapp/resources/images/logo.png?raw=true" rel="icon" type="image/x-icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="/s2/study.js"></script>
+<link rel="stylesheet" href="/s2/study.css">
+</head>
+<body>
+	<header>
+		<h1 class="text-center">Study02</h1>
+	</header>
+	<main>
+		<h2 th:text="${title}"></h2>
+		<h3 th:text="${content}"></h3>
+		<a th:href="@{${url}}" target="_blank">이미지</a>
+<!-- 		<img th:src="@{${url}}" alt="img"> -->
+	</main>
+</body>
+</html>

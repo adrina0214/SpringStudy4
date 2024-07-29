@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Study01</title>
+<link href="https://github.com/JosephBean/SpringStudy2/blob/main/src/main/webapp/resources/images/logo.png?raw=true" rel="icon" type="image/x-icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="/s1/study.js"></script>
+<link rel="stylesheet" href="/s1/study.css">
+</head>
+<body>
+	<header>
+		<h1 class="text-center">Study01</h1>
+	</header>
+	<main>
+		<form action="/s1/data" method="post" enctype="multipart/form-data">
+			<div class="input-body">
+				<label for="title">그림</label>
+				<input type="file" name="file" id="file" accept="image/*" autocomplete="off">
+			</div>
+			<div class="input-body">
+				<input type="submit" value="전송">
+			</div>
+		</form>
+	</main>
+</body>
+</html>
